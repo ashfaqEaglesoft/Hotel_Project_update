@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>reserve MST Hotels</title>
+    <!-- fonts awesome -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/blue-globe-png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--  main style  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<section class="reserve my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="h4">Personal Information</p>
+                <form>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Mr</option>
+                        <option value="1">Mrs</option>
+                        <option value="2">Miss</option>
+                        <option value="3">Dr</option>
+                    </select>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">First Name</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Last Name</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Mobile Number</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Fax</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Adreess</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">City </label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Town</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Post Code</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Zip Code</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Country</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Nationality</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                    </div>
+                </form>
+                <p class="h4">Reservation Details</p>
+                <label for="exampleInputEmail1">Room/Suite Type:</label>
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>Super Deluxe</option>
+                    <option value="1">Super Deluxe</option>
+                    <option value="2">Royal Suite</option>
+                    <option value="3">Executive Suite</option>
+                    <option value="3">Family Suite</option>
+                </select>
+                <label for="exampleInputEmail1">Number of room/suite:</label>
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="3">5+</option>
+                </select>
+                <label for="exampleInputEmail1">Number of Persons:</label>
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="3">5+</option>
+                </select>
+                <label for="exampleInputEmail1">Number of Children:</label>
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                    <option value="3">5+</option>
+                </select>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Any special request?</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Check in</label>
+                    <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Check Out</label>
+                    <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="">
+                </div>
+                <a href="file:///C:/Users/Mahbuba/Desktop/Hotel/welcome.html"><button class="btn btn-success">Submit</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+    
+   
+
+
+
+
+    <!--   JS  file area start  -->
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  
+    <!--   JS  file area  end-->
+
+ 
+
+
+
+
+</body>
+
+</html>

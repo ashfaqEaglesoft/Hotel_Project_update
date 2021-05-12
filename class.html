@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MST HOTELS</title>
+    <!-- fonts awesome -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/blue-globe-png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--  main style  -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        a:link{
+            color:white;
+            text-decoration: none;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+    <!-- scroll button code start  -->
+    <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 20px;
+        }
+        
+        #myBtn {
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          right: 30px;
+          z-index: 99;
+          font-size: 18px;
+          border: none;
+          outline: none;
+          background-color: red;
+          color: white;
+          cursor: pointer;
+          padding: 15px;
+          border-radius: 4px;
+        }
+        
+        #myBtn:hover {
+          background-color: #555;
+        }
+        </style>
+    <!-- scroll button code end  -->
+
+</head>
+
+<body>
+
+    <!-- scroll button here  -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+    <!--  navbar area  -->
+    
+    <header class="navbar-light bg-light py-2">
+     <div class="container">
+         <nav class="navbar navbar-expand-lg ">
+             <a id="mk" class="navbar-brand display-1" href="#"><b style="color:green;">MST HOTELS</b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav m-auto">
+                     <li class="nav-item active">
+                         <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link main" href="#rooms">Rooms</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="#whychooseus">Why Choose Us</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="#staff">Staff</a>
+                     </li>
+                 </ul>
+                 <form class="form-inline my-2 my-lg-0">
+                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                 </form>
+             </div>
+         </nav>
+     </div>
+ </header>
+   
+<!--banner-->
+    <section class="banner pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-white my-5 py-5 font-weight-bold">
+                        <p class="h4 mt-5">Welcome to</p>
+                        <p class="display-3">Five Star Hotel</p>
+                        <p class="h4">We know what you need</p>
+                        <a href="file:///C:/Users/Mahbuba/Desktop/Hotel/reserve.html">
+                        <button class="btn btn-success mt-3 mb-5"><a href="#book">Book Now</a></button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </section>
+    
+<!--check out-->
+    <section class="check-out py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mt-5">
+                    <div class="food">
+                        <i class="fas fa-utensils"></i>
+                        <span class="h1 ml-3" id="book" >Best Services</span>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="food">
+                        <i class="fas fa-concierge-bell"></i>
+                        <span class="h1 ml-3">Quality Food</span>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="food">
+                        <i class="fas fa-wifi"></i>
+                        <span class="h1 ml-3">Quality Food</span>
+                    </div>
+                </div>
+            </div>
+            <form>
+                <div class="row mt-5 mb-5">
+                    <div class="col">
+                        <label for="exampleInputEmail1">Check In</label>
+                        <input type="date" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="col">
+                        <label for="exampleInputEmail1">Check Out</label>
+
+                        <input type="date" class="form-control" placeholder="Last name">
+                    </div>
+                    <div class="col main" id="section1">
+                        <label for="exampleInputEmail1" id="rooms">Rooms</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Royel Room</option>
+                            <option>Delux Room</option>
+                            <option>Double Room</option>
+                            <option>Single Room</option>
+                        </select>
+                        </div>
+                    <a href=""><button type="button" class="btn btn-success ml-3 px-3">Search</button></a>  
+                </div>
+            </form>
+        </div>
+    </section>
+
+   <section class="room my-5">
+        <div class="container">
+            <p class="h1 text-uppercase font-weight-bold text-center">Our Rooms</p>
+            <p class="text-center">Individual, elegant and refined, our suites and rooms offer the ultimate in comfort and luxury in Dhaka. Every room is beautifully furnished, with a luxury en-suite bathroom and the first-class facilities synonymous of this luxury hotel.</p>
+            <div class="row">
+                <div class="col-md-4 mt-5">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="img/room-1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h3 class="card-title">DELUX ROOM</h3>
+                            <h5>89$ / Night</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="img/room-2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h3 class="card-title">DELUX Double ROOM</h3>
+                            <h5>89$ / Night</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="img/room-3.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h3 class="card-title">SINGLE ROOM</h3>
+                            <h5>89$ / Night</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="img/room-4.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h3 class="card-title">SUPERIOR SUITE</h3>
+                            <h5>89$ / Night</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="img/room-5.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h3 class="card-title">FAMILY SUITE</h3>
+                            <h5>89$ / Night</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="img/room-6.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h3 class="card-title">DELUX SUITE</h3>
+                            <h5>89$ / Night</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+   
+   <div class="container">
+       <p><b>Terms and Conditions</b></p>
+        <p>Additional Person Extra Bed US$ 20/- ++ <br>
+        Complementary breakfast. <br>
+        Children under 5 years sharing with parents will not be charged. <br>
+        Check-in time 02:00 PM. <br>
+        Check-out time 12:00 PM. <br>
+        Rose View Hotel Reservation, Cancellation, No Show Policy and General Terms and Conditions apply. <br>
+        Note:Above rates are subject to 10% service charge & 15 % VAT. <br>
+        
+        (calculated on a compounds basis and actual service charge and VAT is 26.50%) Payment of all amounts in connection to the hotel shall be in Bangladesh Taka with the existing currency conversion rate. This may be changed without prior notice.</p>
+    </div>
+
+<!-- room-picture -->
+   <section class="room-picture">
+    <img src="img/room-deal.jpg" alt="" width="100%">
+   </section>
+
+<!-- why choose us -->
+<section class="choose-us my-5">
+    <div class="container">
+        <p class="h1 text-uppercase font-weight-bold text-center" id="whychooseus">Why Choose  Us</p>
+        <div class="row">
+            <div class="col-md-4 mt-5">
+                <img src="img/about-us-2.jpg" alt="" width="100%">
+            </div>
+            <div class="col-md-8 mt-5 text-justify">
+                <p>Why choose us? We investigated among our guests feedback to find out what they most appreciated during their journey and here we are with almost 5 good reasons to come to visit us at MST Hotels Siracusa.</p>
+                <div class="reason mt-5 ml-5">
+                    <ol>
+                        <li>Our main goal is to let you live an exciting and unforgettable holiday creating customized itineraries according to your preferences. We are glad to create with our guests friendly relationship and to share smiles and small talks. We never forget what Paolo likes and what bothers Sophia, we would really satisfy your requests and even anticipate your wishes.
+
+                        <li class="mt-2">Our guests tell about us: feel like heaven – oasis of peace – beautiful, it seems like it has a real soul.
+                            We are really pleased of this as we put our heart and soul in our work, we try to pay attention to every detail and to assure to our rooms the best cleaning day by day.
+                        </li>
+                        <li class="mt-2">About our breakfasts: looking at our buffet, many guests shout out “it’s really a lot” and they smiled. Maybe Lucia, the breakfast’s chef, will take me to the failure but we both claim that otherwise the buffet would be sad. Our chef strikes me for being so modest and helpful, he never says ‘no’ to our guests requests. People congratulate him on his cooking and he always blushes. Every morning, at the daybreak, we go together to the market, just to be sure to have the freshest fish, the best cheeses and the most delicious fruits.
+                            Our friendly waiters let your meals even more pleasant.
+                        </li>
+                        <li class="mt-2">If you like living in the city you are not looking for Hotel Borgo Pantano, otherwise, if you wish to enjoy the peace and the nature come to visit us. Our hotel is at just 7 Km far from the inner city, you can enjoy the beautiful swimming pool and relax on the sun beds. No hurry to look for a parking.
+                            We would suggest you to rent a car to explore the beautiful landscapes, otherwise the shuttle service is available (from Euro 5,00) and it takes just 12 minutes to reach the city.
+                        </li>
+                        <li class="mt-2">That’s our motto. Last January, Trip advisor rewarded us with the Travellers’ Choice 2018 which acknowledges us the 9th place for the best Italian Hotels Top 25. Luigi, the hotel manager, put big banners of the awards on our website and on the social pages and I bended over with laughter for this. I asked him for using smaller banners but he claimed “We put heart and soul in what we do and our hospitality deserves to be underlined”. We are so excited and happy, even worried!
+                                   <br>
+                            “Guests expectations will be higher day by day”.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+  <section class="review pb-5 text-center">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-3 mt-5">
+            <i class="fas fa-smile-beam"></i>
+                    <p class="text-justify mt-4">More Guest reviews</p>
+              </div>
+            <div class="col-md-3 mt-5">
+                <i class="fas fa-heart"></i>
+                    <p class="text-justify mt-4">More Online Bookings</p>
+            </div>
+            <div class="col-md-3 mt-5">
+                <i class="fas fa-thumbs-up"></i>
+                    <p class="text-justify mt-4">Time Saving for Staff</p>
+            </div>
+            <div class="col-md-3 mt-5">
+                <i class="fas fa-star"></i>
+                    <p class="text-justify mt-4">Increase in Revenue</p>
+            </div>
+          </div>
+      </div>
+                     <br>
+                     <br>
+                      <p>*Internal customer data</p>
+  </section>  
+
+  <!-- stuff area -->
+  <section class="staff my-5">
+      <div class="container">
+          <p class="h1 text-uppercase text-center" id="staff">our staff</p>
+          <p class="text-center mt-3">Thanks to our experienced and friendly staff your stay will be a wondeful holiday experience.Around 40 staff enjoy making everyday of your holiday a memorable one.In a pleasant way and with natural personality.Each member of our staff enriches our hotel with their valuable knowledge and genuine enthusiasm.Respect and mutual appreciation form the basis of contact between us, our staff and you, our guests.A philosphy which characterises a special feel-good atmoshpere at the MST Hotel.We find it important that our staff feel good about working in our hotel.“Together we are strong” is our motto, which means a mutual give and take.So work is easier and more enjoyable.Our experienced team consists partly of long-serving staff and is on hand to fulfill all your wishes to your utmost satisfaction.</p>
+          
+          <div class="row">
+                <div class="col-md-3 mt-5 text-center">
+                    <img src="img/saif.jpg" alt="#">
+                    <div class="social text-center py-1 px-3 my-2 mx-3 ">
+                        <a href="" class="border mr-1">
+                            <i class="fa fa-facebook mx-2  py-2 text-white"></i>
+                        </a>
+                        <a href="" class="border mr-1"> <i class="fab fa-twitter mx-2  py-2 text-white"></i></a>
+                        <a href="" class="border mr-1"><i class="fab fa-google-plus-g mx-2  py-2 text-white"></i></a>
+                        <a href="" class="border mr-1"> <i class="fab fa-linkedin-in mx-2  py-2 text-white"></i></a>
+                    </div>
+                    <p class="h5 text-center mt-3 ">Saif Khan</p>
+                    <p class=" text-center profession">Chairman</p>
+              </div>
+                <div class="col-md-3 mt-5 text-center">
+                    <img src="img/shahzeb_khan.jpg" alt="#">
+                    <div class="social text-center py-1 px-3 my-2 mx-3 ">
+                        <a href="" class="border mr-1"><i class="fa fa-facebook mx-2  py-2 text-white"></i></a>
+                        <a href="" class="border mr-1"> <i class="fab fa-twitter mx-2  py-2 text-white"></i></a>
+                        <a href="" class="border mr-1"><i class="fab fa-google-plus-g mx-2  py-2 text-white"></i></a>
+                        <a href="" class="border mr-1"> <i class="fab fa-linkedin-in mx-2  py-2 text-white"></i></a>
+                    </div>
+                    <p class="h5 text-center mt-3 ">Abraham khan</p>
+                    <p class=" text-center profession">Menager</p>
+                </div>
+                <div class="col-md-3 text-center mt-5">
+                    <img src="img/lady.png" alt="#">
+                    <div class="social text-center py-1 px-3 my-2 mx-3 ">
+                        <a href="" class="border mr-1"><i class="fa fa-facebook mx-2  py-2 text-white"></i></a>
+                        <a href="" class="border mr-1"> <i class="fab fa-twitter mx-2  py-2 text-white"></i></a>
+                        <a href="" class="border mr-1"><i class="fab fa-google-plus-g mx-2  py-2 text-white"></i></a>
+                        <a href="" class="border mr-1"> <i class="fab fa-linkedin-in mx-2  py-2 text-white"></i></a>
+                
+                    </div>
+                    <p class="h5 text-center mt-3 ">Jessika Ahmed</p>
+                    <p class=" text-center profession">Head of Department</p>
+                
+                </div>
+                <div class="col-md-3 text-center mt-5">
+                    <img src="img/abraz.jpeg" alt="#">
+                    <div class="social text-center py-1 px-3 my-2 mx-3 ">
+                        <a href="" class="border mr-1"><i class="fa fa-facebook mx-2  py-2 text-white"></i></a>
+                        <a href="" class="border mr-1"> <i class="fab fa-twitter mx-2  py-2 text-white"></i></a>
+                        <a href="" class="border mr-1"><i class="fab fa-google-plus-g mx-2  py-2 text-white"></i></a>
+                        <a href="" class="border mr-1"> <i class="fab fa-linkedin-in mx-2  py-2 text-white"></i></a>
+                
+                    </div>
+                    <p class="h5 text-center mt-3 ">Abraz Khan</p>
+                    <p class=" text-center profession">Vice Chairman</p>
+                </div>
+          </div>
+      </div>
+  </section>
+    
+  <!-- footer area -->
+  <footer class="pb-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6 mt-5">
+                <p class="h3 text-uppercase">Our Package</p>
+                <p>Speacial offer</p>
+                  <a href="file:///C:/Users/Mahbuba/Desktop/Hotel/galary.html">
+                <p>Photo Gallery</p>
+                  </a>
+                <p>Virtual Tour</p>
+              </div>
+              <div class="col-md-6 mt-5">
+                <p class="h3 text-uppercase">CONTACT US</p>
+                <p>2nd Floor,Bosundhara Apartments,Dhaka,Bangladesh</p>
+                  <p><i class="fa fa-phone"></i>+8801628497713</p>
+                  <p><i class="fa fa-envelope-o"></i>info@mstmahbubaaktar.com</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <section class="footer-down py-3">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                <span class="align-middle">&copy;2021 MST Hotels</span>
+              </div>
+            <div class="col-md-6">
+                <div class="d-flex justify-content-end">
+                    <span class="align-middle">Designed by <a class="text-success" href="">Mst Mahbuba Aktar</a></span>
+                </div>
+            </div>
+          </div>
+      </div>
+  </section>
+
+    <!--   JS  file area start  -->
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+<!--    <script src="js/galaryjs.js"></script>-->
+    <script src="js/bootstrap.min.js"></script>
+  
+    <!--   JS  file area  end-->
+
+ <!-- scroll button js start here  -->
+ <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+ <!-- scroll button js end here  -->
+
+
+
+
+</body>
+
+</html>
